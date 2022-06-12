@@ -23,7 +23,5 @@ RUN curl -L $STATIC_URL/deemix-server-linux-$TARGETARCH -o deemix-server
 
 COPY root/ /
 
-COPY ..
-
 EXPOSE 6595
 ENTRYPOINT [ "/init" ]
