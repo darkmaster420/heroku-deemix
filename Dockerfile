@@ -6,11 +6,6 @@ ARG TARGETARCH
 ARG STATIC_URL
 ARG BUILDDATE
 ENV BUILDDATEENV=${BUILDDATE}
-WORKDIR /usr/src/app
-RUN chmod 777 /usr/src/app
-
-COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt
 
 LABEL \
     app.deemix.image.created="${BUILDDATE}" \
