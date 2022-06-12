@@ -4,8 +4,8 @@ services:
         image: registry.gitlab.com/bockiii/deemix-docker
         container_name: Deemix
         volumes:
-            - /your/storage/path/:/downloads
-            - /your/config/location:/config
+            - /app/downloads
+            - /app/config
         environment:
             - PUID=1000
             - PGID=1000
